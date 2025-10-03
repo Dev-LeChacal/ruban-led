@@ -24,6 +24,7 @@ input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
     }
     
 })
+
 input.onButtonPressed(Button.A, function on_button_pressed_a() {
     
     if (!is_countdown) {
@@ -31,6 +32,7 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
     }
     
 })
+
 input.onButtonPressed(Button.B, function on_button_pressed_b() {
     
     if (!is_countdown) {
@@ -38,6 +40,7 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
     }
     
 })
+
 function set_leds_color(start: number, end: number, color: number) {
     let i = start
     while (i <= end) {
@@ -139,6 +142,7 @@ basic.forever(function on_forever() {
     }
     
 })
+
 let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
 let is_countdown = true
 let a_points = 0
